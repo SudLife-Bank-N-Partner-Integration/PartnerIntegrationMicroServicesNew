@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using RestSharp;
+using SUDLife_CallThirdPartyAPI;
 
 namespace SUDLife_Aadarsh.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -28,6 +30,16 @@ namespace SUDLife_Aadarsh.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        public string Apiresponse()
+        {
+
+            ThirdPartyAPI thirdPartyAPI = new ThirdPartyAPI();
+            var response =  thirdPartyAPI.ClientAPI("https://jsonplaceholder.typicode.com/todos/1",Method.Get);
+
+            return response.Content;
         }
     }
 }

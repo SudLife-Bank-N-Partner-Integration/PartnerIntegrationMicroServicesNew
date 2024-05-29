@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="111.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj" />
+  </ItemGroup>
+
 </Project>
