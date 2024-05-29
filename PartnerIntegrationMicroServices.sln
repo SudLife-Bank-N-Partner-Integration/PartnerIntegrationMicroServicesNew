@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Aadarsh", "SUDLife_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Logger", "SUDLife_Logger\SUDLife_Logger.csproj", "{56E30601-0268-44A0-9C2C-FD52B81C6A4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_CallThirdPartyAPI", "SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj", "{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_SecruityMechanism", "SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj", "{F5F25610-3C94-43CD-AA0B-8CB4187EB245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_DBConnection", "SUDLife_DBConnection\SUDLife_DBConnection.csproj", "{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,23 @@ Global
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF53F749-C98F-40D4-90BC-E655FD4E6171}
 	EndGlobalSection
 EndGlobal
