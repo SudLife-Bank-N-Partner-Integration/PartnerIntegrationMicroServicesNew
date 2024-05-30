@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Aadarsh", "SUDLife_Aadarsh\SUDLife_Aadarsh.csproj", "{9AD81673-D00A-4A50-8552-0B531EA9C4EE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Logger", "SUDLife_Logger\SUDLife_Logger.csproj", "{56E30601-0268-44A0-9C2C-FD52B81C6A4B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_CallThirdPartyAPI", "SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj", "{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}"
@@ -13,16 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_SecruityMechanism",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_DBConnection", "SUDLife_DBConnection\SUDLife_DBConnection.csproj", "{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Authentication", "SUDLife_Authentication\SUDLife_Authentication.csproj", "{AC24B254-1777-4853-82E5-388311E91E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9AD81673-D00A-4A50-8552-0B531EA9C4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AD81673-D00A-4A50-8552-0B531EA9C4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AD81673-D00A-4A50-8552-0B531EA9C4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AD81673-D00A-4A50-8552-0B531EA9C4EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E30601-0268-44A0-9C2C-FD52B81C6A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC24B254-1777-4853-82E5-388311E91E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC24B254-1777-4853-82E5-388311E91E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC24B254-1777-4853-82E5-388311E91E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC24B254-1777-4853-82E5-388311E91E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
