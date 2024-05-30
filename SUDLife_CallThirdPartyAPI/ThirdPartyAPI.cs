@@ -5,7 +5,7 @@ namespace SUDLife_CallThirdPartyAPI
     public class ThirdPartyAPI
     {
         public int id { get; set; } = 1;
-        public RestResponse ClientAPI(string url,Method method,string? body = null)
+        public string ClientAPI(string url,Method method,string? body = null)
         {
             var client = new RestClient();
             var request= new RestRequest(url,method);
@@ -15,7 +15,7 @@ namespace SUDLife_CallThirdPartyAPI
             if(method == Method.Post)
                 request.AddJsonBody(body);
 
-            var response = client.Execute<RestResponse>(request);
+            var response = client.Execute<RestResponse>(request).Content.ToString(); 
 
             return response;
         }
