@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj" />
+    <ProjectReference Include="..\SUDLife_DBConnection\SUDLife_DBConnection.csproj" />
+    <ProjectReference Include="..\SUDLife_Logger\SUDLife_Logger.csproj" />
     <ProjectReference Include="..\SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj" />
   </ItemGroup>
 

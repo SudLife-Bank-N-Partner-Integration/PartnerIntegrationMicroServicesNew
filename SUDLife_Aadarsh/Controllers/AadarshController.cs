@@ -4,7 +4,6 @@ using RestSharp;
 using SUDLife_Aadarsh.Models.Request;
 using SUDLife_Aadarsh.Models.Response;
 using SUDLife_CallThirdPartyAPI;
-using SUDLife_SecruityMechanism;
 
 namespace SUDLife_Aadarsh.Controllers
 {
