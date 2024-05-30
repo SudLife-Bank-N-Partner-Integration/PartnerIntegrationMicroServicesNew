@@ -80,7 +80,7 @@ namespace SUDLife_Aadarsh.Controllers
             }
             else
             {
-
+                //fail response
                 _AadarshResponse.Status = "Failure - Service Calling";
                 _AadarshResponse.Message = "Error occured while consuming SDE API.Please contact SUD Admin";
             }
