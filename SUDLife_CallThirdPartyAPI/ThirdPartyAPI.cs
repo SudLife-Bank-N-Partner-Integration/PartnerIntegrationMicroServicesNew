@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using RestSharp;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using RestSharp;
 
 namespace SUDLife_CallThirdPartyAPI
 {

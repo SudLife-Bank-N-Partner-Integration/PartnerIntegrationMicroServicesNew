@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Aadarsh", "SUDLife_Aadarsh\SUDLife_Aadarsh.csproj", "{9AD81673-D00A-4A50-8552-0B531EA9C4EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Aadarsh", "SUDLife_Aadarsh\SUDLife_Aadarsh.csproj", "{9AD81673-D00A-4A50-8552-0B531EA9C4EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Logger", "SUDLife_Logger\SUDLife_Logger.csproj", "{56E30601-0268-44A0-9C2C-FD52B81C6A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Logger", "SUDLife_Logger\SUDLife_Logger.csproj", "{56E30601-0268-44A0-9C2C-FD52B81C6A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_CallThirdPartyAPI", "SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj", "{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_CallThirdPartyAPI", "SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj", "{C1F84BED-B3DC-4E96-96E6-1B241D39AF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_SecruityMechanism", "SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj", "{F5F25610-3C94-43CD-AA0B-8CB4187EB245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_SecruityMechanism", "SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj", "{F5F25610-3C94-43CD-AA0B-8CB4187EB245}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_DBConnection", "SUDLife_DBConnection\SUDLife_DBConnection.csproj", "{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_DBConnection", "SUDLife_DBConnection\SUDLife_DBConnection.csproj", "{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

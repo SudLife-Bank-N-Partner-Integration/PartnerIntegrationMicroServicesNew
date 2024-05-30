@@ -1,0 +1,97 @@
+URL:- https://partnerintegration.sudlife.in/api/v1/PremiumCal/Aadarsh
+
+
+Checksum: HFfkh5HZ8gjJFR2mOQWiwrk4CZmJd710qvuoDPmIWgY=
+
+Encrypted Request:
+{
+  "Source": "BOI",
+  "TranscationId": "123456",
+  "EncryptReqSign":"LTtW8U4ekT9wx7iyLCeM1y59R8NWl3fz6LHG65cwO6/N/DC/ZRBAIkYfihHW48fewbzn/M+9+L2F814RbI6g947mFAvrvxEgYBJ50ed2Wv8k2QYaO6fVcrmgtib8Lg95RwEMVxKluyIi07b9Cvvzjc7jE524TiVQNdNRwf7Cu0BKQVfTuRfRU12kt8/139zOjdMooUld15EAFRfB1YdjVwXS5QLmCVeptIAeRo8SwUM1jhBz2WoaePTRtZlu86nxJBJy88OkVy78bmt1Z58LdB0Eq3zne3lz/qPSKcN0AMifgpbU+A2VC6x0uN6V0UaaS/XrYseRUbtv2mqKNigiGummope3fRRUP4xj8/Dg8PKQK7pY1lSg5i3slrUOy2svlNbEY8X+nCMUhrDJjncCJ+JTHV0jnfzS1ZEM5z0vITpp8diBkLZBc7mZagcGgNwABF4lCCWKLEjbhyiyAodtwW6BE4UjelFc2lNCEyCW+/f4jVxiV74kG2jlWKagT0jEObc35we4OO8G9/VNrIsvhCyrO48ecfAzY94RiKGK6ORfc5XjipnN+RE5cWcz7sZ96eY1gEWoDM964+el39bEpVy9ZpjE0MNR8ggaeGrEJiODCT0wLCsYJXC3lNcXtl4HkJ6TG5MbWbRORG2USodSfNNcuMzdUG4guE8w12zP9Fbf76sLiAF8LPiIEablUrzLYvydiTKO4ete9QD4Gk/bYdi4h7rkB6i9fZjCrSW13mjw1uZ3UwUVTMNQ+PL6/pZsAvqTuhXOoSWyWeCsws7b1tRutMt7UZEut4AI563teBIW9MGPBBJB9bjwTmGUsj2WKjYiZk/+WSAcoOheLowhPEXVV9oH5TF50FHojlwY5K75Bl0vk9fe3s2l+T1AqzmIOCpB9hHRubR5SElH3Cgi+ehtL1Xh0ndHegcVqKDIe//0GIfiZleF8ekPu0ebT4jTlgOIgp05iOBWzPljXRwdQ+f4dMv4pMd0kD/h90zMSDIZ69kohjc5n6F029ldMiu8DVszDCuO0ioUpEvXVIIx4Si8hpJJ5amvRNzIltxQatilHkhLL9e/0NwJqMLktVgIXrvuIMcGrFXnZsMV4LCiBlFNBLlcZSEk8NAuH20gNe7JI/lw++Fwhmb7fZHyO9YSMWm4chZaPenhhEOCLMnfQQ=="
+  }
+
+Plain Request:
+{
+  "InwardDate": "2020-10-15 13:24:30",
+  "ApplicationNo": "",
+  "Source": "BOI",
+  "CustomerID": "600624454",
+  "AddField": {
+    "Dummy": [
+      {
+        "DummyName": "",
+        "DummyValue": ""
+      },
+      {
+        "DummyName": "",
+        "DummyValue": ""
+      }
+    ]
+  },
+  "ApplicantDetails": {
+    "ApplicantFName": "Akshay",
+    "ApplicantLName": "gavali",
+    "ApplicantDateOfBirth": "01-01-1980",
+    "ApplicantGender": "male",
+    "ApplicantEmail": "test@gmail.com",
+    "ApplicantContactNumber": "9999999998",
+    "ApplicantCity": "",
+    "ApplicantState": ""
+  },
+  "ProposerDetails": {
+    "IsProposersameasApplicant": "1",
+    "ProposerFName": "first",
+    "ProposerLName": "last",
+    "ProposerDateOfBirth": "05-10-1987",
+    "ProposerGender": "male",
+    "ProposerEmail": "test@gmail.com",
+    "ProposerContactNumber": "1234567890",
+    "ProposerCity": "",
+    "ProposerState": ""
+  },
+  "StandardAgeProof": "Yes",
+  "PremiumPaymentModes": "annual",
+  "KerelaFloodsCESSApplicable": "no",
+  "DistributionChannel": "corporate agent",
+  "SumAssured": "1000000",
+  "StaffPolicy": "Yes"
+}
+
+
+Encrypted Response :
+{
+  "statusCode": 200,
+  "sourceName": "BOI",
+  "transcationId": "102469",
+  "encryptResSign": "tlK5hRZcvSN9zldp8rW85Y6GZrixvZFi/n1G9HPQ6k9+bBXfiBu5Wyd3B4XaMRvEOdq6G+wsk3RjPZyVlyiquxIByp5BJTqKzSN6NrWyGCp+ioOdZC++21cR3f6KWrdEbDaazMhQjeCToWavs2yN7Qc/mRg+33QSaLSi4jw3T7UiHcJzgb104SQEhGl2ibQ7sF/WYUbJNI3pi0j3CAZl+g=="
+}
+
+Decrypted Response:
+
+{
+  "ModalPremium":153377.0,
+  "Tax":6902.0,
+  "ModalPremiumwithTax":160279.0,
+  "Message":"BI Generated successfully",
+  "Status":"Success",
+  "TransactionId":493491
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
