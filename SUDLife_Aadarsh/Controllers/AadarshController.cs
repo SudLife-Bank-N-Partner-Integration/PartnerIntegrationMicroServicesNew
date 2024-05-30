@@ -14,7 +14,6 @@ namespace SUDLife_Aadarsh.Controllers
     {
         private IConfiguration config { get; set; }
         private readonly ThirdPartyAPI thirdPartyAPI;
-        private readonly ClsCryptography clsCryptography;
         
         public AadarshController(IConfiguration configuration)
         {
