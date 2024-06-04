@@ -1,0 +1,6 @@
+@SUDLife_GetApplicationNumber_HostAddress = http://localhost:5292
+
+GET {{SUDLife_GetApplicationNumber_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

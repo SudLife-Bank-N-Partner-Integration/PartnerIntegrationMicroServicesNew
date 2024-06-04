@@ -13,14 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_DBConnection", "SUD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Authentication", "SUDLife_Authentication\SUDLife_Authentication.csproj", "{AC24B254-1777-4853-82E5-388311E91E2C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Aadarsh", "..\..\Shubham\Partner Integration Micro Services\PartnerIntegrationMicroServicesNew\SUDLife_Aadarsh\SUDLife_Aadarsh.csproj", "{D26D067F-9BD3-4E77-B839-17A561414E31}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB} = {0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}
-		{56E30601-0268-44A0-9C2C-FD52B81C6A4B} = {56E30601-0268-44A0-9C2C-FD52B81C6A4B}
-		{AC24B254-1777-4853-82E5-388311E91E2C} = {AC24B254-1777-4853-82E5-388311E91E2C}
-		{C1F84BED-B3DC-4E96-96E6-1B241D39AF74} = {C1F84BED-B3DC-4E96-96E6-1B241D39AF74}
-		{F5F25610-3C94-43CD-AA0B-8CB4187EB245} = {F5F25610-3C94-43CD-AA0B-8CB4187EB245}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Aadarsh", "SUDLife_Aadarsh\SUDLife_Aadarsh.csproj", "{83A77AE3-EF1F-4DEF-B406-7C025DC383D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_GetApplicationNumber", "SUDLife_GetApplicationNumber\SUDLife_GetApplicationNumber.csproj", "{DCCEE8AC-E8D2-4DA2-8901-16DE371BCB91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +43,14 @@ Global
 		{AC24B254-1777-4853-82E5-388311E91E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC24B254-1777-4853-82E5-388311E91E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC24B254-1777-4853-82E5-388311E91E2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D26D067F-9BD3-4E77-B839-17A561414E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D26D067F-9BD3-4E77-B839-17A561414E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D26D067F-9BD3-4E77-B839-17A561414E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D26D067F-9BD3-4E77-B839-17A561414E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A77AE3-EF1F-4DEF-B406-7C025DC383D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A77AE3-EF1F-4DEF-B406-7C025DC383D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A77AE3-EF1F-4DEF-B406-7C025DC383D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A77AE3-EF1F-4DEF-B406-7C025DC383D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCEE8AC-E8D2-4DA2-8901-16DE371BCB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCEE8AC-E8D2-4DA2-8901-16DE371BCB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCEE8AC-E8D2-4DA2-8901-16DE371BCB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCEE8AC-E8D2-4DA2-8901-16DE371BCB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
