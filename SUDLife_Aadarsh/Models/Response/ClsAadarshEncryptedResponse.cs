@@ -2,9 +2,23 @@
 {
     public class ClsAadarshEncryptedResponse
     {
-        public int statusCode { get; set; }
-        public string? sourceName { get; set; }
-        public string? transcationId { get; set; }
-        public string? encryptResSign { get; set; }
+       
+        public ClsAadarshEncryptedResponse()
+        {
+
+        }
+        public ClsAadarshEncryptedResponse(int StatusCode, string sourceName, string encryptResSign)
+        {
+            this.StatusCode = StatusCode;
+            this.SourceName = sourceName;
+            //  this.TranscationId = transcationId;
+            this.EncryptResSign = encryptResSign;
+        }
+        public int StatusCode { get; set; }
+        public string? SourceName { get; set; }
+        // public string? transcationId { get; set; }
+        public string? EncryptResSign { get; set; }
     }
+
+
 }
