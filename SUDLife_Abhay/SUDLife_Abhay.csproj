@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Serilog" Version="4.0.0" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SUDLife_Authentication\SUDLife_Authentication.csproj" />
+    <ProjectReference Include="..\SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj" />
+    <ProjectReference Include="..\SUDLife_DBConnection\SUDLife_DBConnection.csproj" />
+    <ProjectReference Include="..\SUDLife_Logger\SUDLife_Logger.csproj" />
+    <ProjectReference Include="..\SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj" />
+  </ItemGroup>
+
+</Project>

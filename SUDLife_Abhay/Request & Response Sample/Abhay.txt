@@ -1,0 +1,102 @@
+
+*Abhay
+
+URL:- https://partnerintegration.sudlife.in/api/v1/PremiumCal/Abhay
+
+CheckSum:- Ng3c/YuYvruJWE+G63Fo6wG6ceEqSfSCesScd0pe0qM=
+
+Encrypted Request:
+
+  {
+  "Source": "BOI",
+  "TranscationId": "123456",
+  "EncryptReqSign":"LTtW8U4ekT9wx7iyLCeM1y59R8NWl3fz6LHG65cwO6/N/DC/ZRBAIkYfihHW48feWL788k/mBI/1srFQOmCopKvn2raJZGujxe88NUMa4aP/zWsOhHw/X68gHJkEp8WLVTGGi0xy/rCfHg1OiKFk1QwWrJVd+tsDhi5ai9DKTgDi9C9/6I7FfHtxYmJZ9fvAQ/0AGPhzWL2JA44T6Rm39XxtjW631sA/TY9ZarUOQ1HYoRwlPW4j0ZGF6SlZLTG++hUbjgdZIKgTvrpPC0+cPJP+9xAsMusf3z6QvLD98PptHyyqZ9hrgey83NJsAZ/A8PsvX1KozzleBsm2ZliQUTZlNen8M73DBOy29uojLvCi+QVJ/u7d0MWKUJC6b9bMjf/Xw7LYU+AeD/o34lCk+UCroT5/Z5yz5wf09QwaV5rAMyoAuUZaKsyHFJk9aVO80zIyLHVVzCqfnJiW8h9aXTg2HpNtfIl/hU9wmw758wmFTN+uL1WQ7xY1jN8mLTGDBSucTd7VDHvTlpHtlJwVJ3P5hjnx/cYlYAOTeMtNSc2wI7egcKczkXj+HBIzRoTVsrZgJB4TL9TRT50OBkEn/9Q6xFYGxl4knAo7i70Cq7uYVRv9/WiCmz9tEnc2Mh3xSyvzdJxWzx4lCz37MP69ogpoUMx2/1ew8wxrFPaQENrGiWUpEASUvdyIUPBV9bJA+ZakaB693NN7O4Er2fTxuc/Abf/dj66F9HCRwqFZ9Ja4366IhJiwv5s1e8cgE6gptOJQICj1Ld7KSUFBlwjcJMVDOcJtwGRjnvtG82L3VV6sqAWhLx31J1fDKj/MX99BwOh9rAkWUMdxiqy5C3iZjH0iOi+rVOfWBMRhJ2z5wblBptl7nRRcCEmmM54f49o8BdBH8U+R3H6/hzI4BDZbpRE5IDswDH5qM7uQZsXGI8lFjgQiiuDWyflvseRJpddwXENqG3mTF/ERtyQ8RSuTYq7Fv7HGHOu91M9DX40lI2JS4pRHNLz+ddq7+JO3RWwZ1f9uwblm+vNNjq4B9eooaEGgoPbgeESgyZvbw8PPCY8wmKSOJKhGqqxR8/OD6ZVZi7mPHyUUP9Hq3+LF2uqWfZBn/sRBhhiZ8UmOsx2wpT8T5VSBa7sW9Fb2iXs/ugNqIx2WJwl+WYR6gkfP1JXqdMMHEBFwvd/Fe3/3WP4iEgWr+ylbMeTkaHW4Byba5oqIhBD7zO2Iu+pi2uJV+9fZpMSXT02Ol/oZD93iZweobPzSl4JoBzrINhToDHebdzHJdCLMu7WMg7Ayqn0B+za9dsOKYjeBWdL3Apqaw0KJ49TIWMCSm4Ob6uv0TyG7hJnXfkP3zGEJLTAlnjj0niOsbDyItSxZrky1GrEZv5p7qxzbtaLf3picSy4avf0SqUvnvKxyyur5ryjHWCfuro2XHcKKaftYvZ887UIG548jzBH+xVPZHQzLL4xQsw4TCMOwmGy1b8tr4o+xMoA7enyYI+zO5ldil+LbvDRT1jeO1VYwCrBlKjITuuyTSKo9c99FF3aSeJesJrTcc+uzEZ/Ubw=="
+  }
+
+Decrypted Request:
+{
+    "InwardDate": "2020-10-15 13:24:30",
+    "ApplicationNo": "",
+    "Source": "BOI",
+    "CustomerID": "600624454",
+    "AddField": {
+        "Dummy": [
+            {
+                "DummyName": "",
+                "DummyValue": ""
+            },
+            {
+                "DummyName": "",
+                "DummyValue": ""
+            }
+        ]
+    },
+    "ChannelDetails": {
+        "ChannelType": "BOI",
+        "ChannelCode": "012345"
+    },
+    "ApplicantDetails": {
+        "ApplicantFName": "First",
+        "ApplicantLName": "Last",
+        "ApplicantDateOfBirth": "04-01-1999",
+        "ApplicantGender": "male",
+        "ApplicantEmail": "test@gmail.com",
+        "ApplicantContactNumber": "9994455666",
+        "ApplicantCity": "",
+        "ApplicantState": ""
+    },
+    "ProposerDetails": {
+        "IsProposersameasApplicant": "1",
+        "ProposerFName": "first",
+        "ProposerLName": "last",
+        "ProposerDateOfBirth": "29-01-1980",
+        "ProposerGender": "male",
+        "ProposerEmail": "test@gmail.com",
+        "ProposerContactNumber": "1234567890",
+        "ProposerCity": "",
+        "ProposerState": ""
+    },
+    "StandardAgeProof": "yes",
+    "PremiumPaymentTerm": 120,
+    "PolicyTerm": 180,
+    "PremiumPaymentModes": "Semi-Annual",
+    "KerelaFloodsCESSApplicable": "no",
+    "DistributionChannel": "Direct Marketing",
+    "SumAssured": 5000000,
+    "StaffPolicy": "Yes",
+    "AATPDRiderOpted": "yes",
+    "AATPDRiderSA": 500000,
+    "SubDistributionChannel": "Direct Sales Team",
+    "PayoutOption": "Lump-Sum",
+    "BenefitOption": "Life Cover with Return of Premium",
+    "Smoker": "Non - Smoker"
+}
+
+
+Encrypted Response:
+{
+  "statusCode": 200,
+  "sourceName": "BOI",
+  "transcationId": "119066",
+  "encryptResSign": "5s96ndBGoM/4j+2PXgfoXhxFA944RHDdbrNjAlrRVrVQT3ZmJPK4fwXxthTzOpvMKiQW2Xp26Y7LRTtAznukJxba5HFISBzOfkSzDkVykR2chXgmdLcTFlCe8Z01PN7vFBoSZkfg2ciqBAWbDNj6l25w3YaBdyMq/bflipdpMZkU0mnSgSVqAXUNFV6xT15bnwwPmlNcHSROJe5fiYgJfTkUI3jFCR/M0EanGmO0Lxfguf5clXi5zYKKIZM17ADFMYzkhzRmiEK/UoVbglbiUJreEoYHwEXpTVHojyhkKrCg+4fTdMN52+1GWTQb92ujqP0yvQUUBogQxLJ9yJjJplxmoHU5zn4JHQ1rIj+6hCUlIjKm6/1yx51F/XkXM66iQHGddv1o1jcy7KBiGviVYlj14vQU26g1KctyT6dyi9Q+qVA6TC77Md6spKjydrWd"
+}
+
+Decrypted Response:
+
+{
+  "AATPDPremium": 0,
+  "AATPDTax": 0,
+  "AATPDwithTax": 0,
+  "AATPDAnnualPremium": 0,
+  "ModalPremium": 0,
+  "Tax": 0,
+  "ModalPremiumwithTax": 0,
+  "AnnualPremium": 0,
+  "TotalPremium": 0,
+  "TotalTAX": 0,
+  "TotalPremiumwithTax": 0,
+  "TotalAnnualPremium": 0,
+  "Message": "API for this product is not licensed",
+  "Status": "Fail",
+  "TransactionId": 0
+}
