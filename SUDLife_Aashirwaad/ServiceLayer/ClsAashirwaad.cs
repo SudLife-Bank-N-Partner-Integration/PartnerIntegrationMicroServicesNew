@@ -36,7 +36,7 @@ namespace SUDLife_Aashirwaad.ServiceLayer
                 new ClsSDEBaseKeyValuePair { key = "@LI_LNAME", value =ObjAashirwaad.ApplicantDetails.ApplicantLName },
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_ENTRY_AGE", value =Convert.ToString(_CommonOperations.CalculateAge(Convert.ToDateTime(_CommonOperations.DateFormating((ObjAashirwaad.ApplicantDetails.ApplicantDateOfBirth)))))  },
-         new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating((ObjAashirwaad.ApplicantDetails.ApplicantDateOfBirth))},
+                new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating((ObjAashirwaad.ApplicantDetails.ApplicantDateOfBirth))},
                 new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.Gender(ObjAashirwaad.ApplicantDetails.ApplicantGender.ToLower()) },
 
 
