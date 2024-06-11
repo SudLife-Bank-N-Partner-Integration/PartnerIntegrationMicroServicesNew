@@ -32,18 +32,7 @@ namespace SUDLife_Akshay.ServiceLayer
             }
         }
 
-        public string Gender(string Gendr)
-        {
-            Dictionary<string, string> DictGender = new Dictionary<string, string>();
-            DictGender.Add("male", "M");
-            DictGender.Add("female", "F");
-            DictGender.Add("third gender", "T");
-            DictGender.Add("trans", "T");
-            DictGender.Add("others", "O");
-            string Gen = DictGender[Gendr].ToString();
-            return Gen;
-        }
-
+       
         public string CalculateAge(DateTime dateOfBirth)
         {
             try
@@ -62,14 +51,7 @@ namespace SUDLife_Akshay.ServiceLayer
             }
 
         }
-        public string StandardAgeProof(string SAP)
-        {
-            Dictionary<string, string> DictSAP = new Dictionary<string, string>();
-            DictSAP.Add("yes", "1");
-            DictSAP.Add("no", "0");
-            string SAPs = DictSAP[SAP].ToString();
-            return SAPs;
-        }
+      
         public string APIKey()
         {
             try

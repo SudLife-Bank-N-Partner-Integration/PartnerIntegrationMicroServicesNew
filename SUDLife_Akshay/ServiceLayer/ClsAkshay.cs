@@ -62,7 +62,7 @@ namespace SUDLife_Akshay.ServiceLayer
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_ENTRY_AGE", value =  Convert.ToString(ApplicantAge) },
                 new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: ObjAkshay.ApplicantDetails.ApplicantDateOfBirth)},
-                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.Gender(ObjAkshay.ApplicantDetails.ApplicantGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value = _CommonOperations.GetDynamicValue("Gender",(ObjAkshay.ApplicantDetails.ApplicantGender.ToLower())) },
 
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_STATE", value = "19" },
@@ -76,7 +76,7 @@ namespace SUDLife_Akshay.ServiceLayer
 
 
                 new ClsSDEBaseKeyValuePair { key = "@PROPOSER_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: ObjAkshay.ProposerDetails.ProposerDateOfBirth) },
-                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.Gender(ObjAkshay.ProposerDetails.ProposerGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value =  _CommonOperations.GetDynamicValue("Gender",(ObjAkshay.ProposerDetails.ProposerGender.ToLower())) },
                 new ClsSDEBaseKeyValuePair { key = "@AGE_PROOF", value ="-1" },
 
 
@@ -99,7 +99,7 @@ namespace SUDLife_Akshay.ServiceLayer
                 new ClsSDEBaseKeyValuePair { key = "@PR_ModalPrem", value = string.Empty},
                 new ClsSDEBaseKeyValuePair { key = "@kfc", value = "0"},
 
-                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.StandardAgeProof(ObjAkshay.StandardAgeProof.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value =  _CommonOperations.GetDynamicValue("StandardAgeProof",(ObjAkshay.StandardAgeProof.ToLower())) },
 
                 new ClsSDEBaseKeyValuePair { key = "@TargetSTOFund", value = "0"},
 

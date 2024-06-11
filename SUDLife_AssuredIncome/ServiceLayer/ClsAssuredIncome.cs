@@ -59,7 +59,7 @@ namespace SUDLife_AssuredIncome.ServiceLayer
 
                     new ClsSDEBaseKeyValuePair { key = "@LI_ENTRY_AGE", value = Convert.ToString(Convert.ToInt32(_CommonOperations.CalculateAge(Convert.ToDateTime(_CommonOperations.DateFormating(DateToBeFormatted: ObjPremiumRequest.ApplicantDetails.ApplicantDateOfBirth))))) },
                     new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: ObjPremiumRequest.ApplicantDetails.ApplicantDateOfBirth)},
-                    new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.Gender(ObjPremiumRequest.ApplicantDetails.ApplicantGender.ToLower()) },
+                    new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.GetDynamicValue("Gender",(ObjPremiumRequest.ApplicantDetails.ApplicantGender.ToLower())) },
 
 
                     new ClsSDEBaseKeyValuePair { key = "@LI_STATE", value = "19" },
@@ -73,7 +73,7 @@ namespace SUDLife_AssuredIncome.ServiceLayer
 
 
                     new ClsSDEBaseKeyValuePair { key = "@PROPOSER_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: ObjPremiumRequest.ProposerDetails.ProposerDateOfBirth) },
-                    new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.Gender(ObjPremiumRequest.ProposerDetails.ProposerGender.ToLower()) },
+                    new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.GetDynamicValue("Gender",(ObjPremiumRequest.ProposerDetails.ProposerGender.ToLower())) },
                     new ClsSDEBaseKeyValuePair { key = "@AGE_PROOF", value ="-1" },
 
 
@@ -99,7 +99,7 @@ namespace SUDLife_AssuredIncome.ServiceLayer
                     new ClsSDEBaseKeyValuePair { key = "@PR_ModalPrem", value = string.Empty},
 
 
-                    new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.StandardAgeProof(ObjPremiumRequest.StandardAgeProof.ToLower()) },
+                    new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.GetDynamicValue("StandardAgeProof",(ObjPremiumRequest.StandardAgeProof.ToLower())) },
                     new ClsSDEBaseKeyValuePair { key = "@PR_CHANNEL", value = _CommonOperations.GetDynamicValue("DistributionChannelAssuredIncome",ObjPremiumRequest.DistributionChannel.ToLower())},
                     new ClsSDEBaseKeyValuePair { key = "@kfc", value = "0"},
 

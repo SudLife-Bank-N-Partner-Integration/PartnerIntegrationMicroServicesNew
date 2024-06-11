@@ -32,7 +32,7 @@ namespace SUDLife_Aadarsh.ServiceLayer
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_ENTRY_AGE", value =  Convert.ToString( Convert.ToInt32(_CommonOperations.CalculateAge(Convert.ToDateTime(_CommonOperations.DateFormating(DateToBeFormatted: request.ApplicantDetails.ApplicantDateOfBirth)))))  },
                 new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: request.ApplicantDetails.ApplicantDateOfBirth)},
-                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.Gender(request.ApplicantDetails.ApplicantGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.GetDynamicValue("Gender",(request.ApplicantDetails.ApplicantGender.ToLower())) },
 
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_STATE", value = "9" },
@@ -46,7 +46,7 @@ namespace SUDLife_Aadarsh.ServiceLayer
 
 
                 new ClsSDEBaseKeyValuePair { key = "@PROPOSER_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: request.ProposerDetails.ProposerDateOfBirth) },
-                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.Gender(request.ProposerDetails.ProposerGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.GetDynamicValue("Gender",(request.ProposerDetails.ProposerGender.ToLower())) },
                 new ClsSDEBaseKeyValuePair { key = "@AGE_PROOF", value ="-1" },
 
 
@@ -66,7 +66,7 @@ namespace SUDLife_Aadarsh.ServiceLayer
 
 
                 new ClsSDEBaseKeyValuePair { key = "@PR_ModalPrem", value = string.Empty},
-                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.StandardAgeProof(request.StandardAgeProof.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value =  _CommonOperations.GetDynamicValue("StandardAgeProof",(request.StandardAgeProof.ToLower())) },
 
                 new ClsSDEBaseKeyValuePair { key = "@kfc", value = "0"},
 
