@@ -12,11 +12,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     <PackageReference Include="RestSharp" Version="111.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SUDLife_CallThirdPartyAPI\SUDLife_CallThirdPartyAPI.csproj" />
-    <ProjectReference Include="..\SUDLife_DBConnection\SUDLife_DBConnection.csproj" />
+    <ProjectReference Include="..\SUDLife_DataRepo\SUDLife_DataRepo.csproj" />
     <ProjectReference Include="..\SUDLife_Logger\SUDLife_Logger.csproj" />
     <ProjectReference Include="..\SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj" />
   </ItemGroup>

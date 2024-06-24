@@ -6,24 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SUDLife_DBConnection
+namespace SUDLife_DataRepo
 {
-    public class Ado
+    public class DataAccess : IExectueProcdure
     {
-        DBConnect connection;
+        private readonly string _connectionString;
 
-        public Ado()
-        {
-            connection = DBConnect.SingleInstance;
-        }
+        public DataAccess(string con ) { _connectionString = con; }
 
-        public DataSet ExecuteProcedure(string procName,SqlParameter[] param)
+
+        public DataSet ExecuteProcedure(string procName, SqlParameter[] param)
         {
             DataSet dataSet = new DataSet();
 
-            using (IDbConnection con = connection.connection)
+            using (var connection = new SqlConnection(_connectionString))
             {
-                SqlCommand command = new SqlCommand(procName, (SqlConnection)con);
+                SqlCommand command = new SqlCommand(procName, connection);
                 command.CommandType = CommandType.StoredProcedure;
                 foreach (var item in param)
                 {
