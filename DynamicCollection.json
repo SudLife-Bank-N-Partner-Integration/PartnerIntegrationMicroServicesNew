@@ -1,0 +1,524 @@
+{
+  "InputMode": {
+    "annual": "1",
+    "semi-annual": "2",
+    "quarterly (ecs/ si)": "3",
+    "monthly (ecs/ si)": "4",
+    "single": "5"
+  },
+
+  "SumAssured": {
+
+    "50,000": "50000",
+    "50000": "50000",
+    "3,00,000": "300000",
+    "300000": "300000",
+    "5,00,000": "500000",
+    "500000": "500000",
+    "10,00,000": "1000000",
+    "1000000": "1000000",
+    "15,00,000": "1500000",
+    "1500000": "1500000",
+    "20,00,000": "2000000",
+    "2000000": "2000000",
+    "25,00,000": "2500000",
+    "2500000": "2500000"
+
+  },
+
+  "EMR": {
+    "1": "0.25",
+    "2": "0.5",
+    "3": "0.75",
+    "4": "1",
+    "5": "1.25",
+    "6": "1.5",
+    "7": "1.75",
+    "8": "2",
+    "9": "2.25",
+    "standard": "0"
+  },
+  "VarientName": {
+    "platinum": "1",
+    "platinum plus": "2"
+  },
+  "Frequency": {
+    "annual": "Yearly",
+    "yearly": "Yearly",
+    "semi-annual": "Half- Yearly",
+    "quarterly": "Quarterly",
+    "monthly": "Monthly",
+    "single": "Single"
+  },
+  "StaffPolicy": {
+    "yes": "8",
+    "no": "9",
+    "sud life staff": "10",
+    "corporate staff": "11"
+  },
+
+  "StaffPolicyPosSanchayPremium": {
+    "yes": "7",
+    "sud life staff/family": "8",
+    "no": "9",
+    "direct sales team": "10"
+  },
+
+  "SubDistributionChannelPosSanchayPremium": {
+    "sud life staff/family": "8",
+    "direct sales team": "9"
+  },
+
+
+  "DistributionChannel": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "broker": "2",
+    "agency channel": "3",
+    "online": "4",
+    "web aggregrator": "5",
+    "insurance marketing firm": "6",
+    "direct marketing": "7"
+  },
+
+  "DistributionChannelPosSanchayPremium": {
+
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "agency": "2",
+    "broker": "3",
+    "direct marketing": "5",
+    "insurance marketing firm": "4"
+  },
+
+
+  "DistributionChannelEWealthRoyale": {
+    "corporate agency": "3",
+    "direct marketing": "6",
+    "online": "8",
+    "broker": "5",
+    "agency": "4",
+    "insurance marketing firm": "7",
+    "web aggregator": "9"
+  },
+  "StaffPolicyEWealthRoyale": {
+    "yes": "10",
+    "yes ,bank staff": "10",
+    "no": "11",
+    "yes,sud life staff": "12",
+    "na": "13"
+  },
+  "StaffDiscount": {
+    "yes": "7",
+    "no": "8"
+  },
+  "InputModeAashirwaad": {
+    "annual": "1",
+    "semi-annual": "2",
+    "quarterly (ecs/ si)": "3",
+    "monthly (ecs/ si)": "4"
+  },
+  "StaffPolicyAashirwaad": {
+    "yes": "6",
+    "no": "7"
+  },
+  "DistributionChannelAashirwaad": {
+    "corporate agents": "1",
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "brokers": "2",
+    "agency": "3",
+    "direct marketing": "7",
+    "online": "8"
+  },
+  "PayoutOptionAashirwaad": {
+    "self starter": "1",
+    "professional": "2",
+    "foundation": "3",
+    "technical": "4",
+    "career builder": "5"
+  },
+  "PayoutOptionAbhay": {
+    "lump-sum": "3",
+    "monthly income": "4",
+    "lump-sum plus monthly income": "5"
+  },
+  "DistributionChannelAbhay": {
+
+    "corporate agent": "6",
+    "corporate agency": "6",
+    "agency": "7",
+    "broker": "8",
+    "direct marketing": "9",
+    "insurance marketing firm": "14",
+    "online": "15"
+  },
+  "SubDistributionChannelAbhayPremium": {
+    "sud life staff/family": "12",
+    "direct sales team": "13"
+  },
+  "StaffPolicyAbhay": {
+    "yes": "10",
+    "no": "18",
+    "sud life staff/family": "11"
+  },
+  "Smoker": {
+    "non - smoker": "0",
+    "smoker": "1"
+  },
+  "BenefitOption": {
+    "life cover": "1",
+    "life cover with return of premium": "2",
+    "life cover with critical illness": "3"
+  },
+  "StaffPolicyPOSAdarsh": {
+    "yes": "5",
+    "no": "6",
+    "sud life staff": "11"
+  },
+  "DistributionChannelAdarsh": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "agency": "2",
+    "broker": "3",
+    "direct marketing": "4",
+    "online": "9",
+    "pos-p": "10",
+    "insurance marketing firm": "12"
+  },
+  "DistributionChannelCenturyStar": {
+
+    "corporate agent": "14",
+    "corporate agency": "14",
+    "direct channel": "15",
+    "agency": "16",
+    "broker": "17",
+    "insurance marketing firm": "18",
+    "online": "19"
+  },
+  "StaffPolicyCenturyStar": {
+    "yes": "20",
+    "no": "21",
+    "sud life staff/family": "22",
+    "direct sales team": "23"
+  },
+  "StaffDiscountAssuredIncome": {
+    "yes": "11",
+    "no": "12"
+  },
+  "DistributionChannelAssuredIncome": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "brokers": "2",
+    "agency": "3",
+    "direct  channel": "4",
+    "insurance marketing firm": "5"
+  },
+  "DefermentPeriod": {
+    "0": "1",
+    "5": "2"
+  },
+  "PayoutOptionAssuredIncome": {
+    "10": "3",
+    "15": "4",
+    "20": "5",
+    "25": "6"
+  },
+  "DistributionChannelEliteAssurePlus": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "imf": "2",
+    "broker": "3",
+    "direct marketing": "4",
+    "individual agency": "10"
+  },
+  "StaffPolicyEliteAssure": {
+    "yes": "5",
+    "no": "6"
+  },
+  "StaffPolicyCenturyPlus": {
+    "yes": "6",
+    "no": "7",
+    "sud life staff/family": "11",
+    "direct sales team": "12"
+  },
+
+  "DistributionChannelCenturyPlus": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "direct  channel": "2",
+    "agency": "3",
+    "broker": "4",
+    "online": "5",
+    "insurance marketing firm": "10"
+  },
+
+  "StaffPolicyGMBP": {
+    "yes": "5",
+    "no": "6"
+  },
+  "DistributionChannelGMBP": {
+    "corporate agency": "1",
+    "agency": "2",
+    "broker": "3",
+    "direct": "4"
+  },
+  "PremiumPaymentTermGuarenteedPensionPlan": {
+    "1": "1",
+    "60": "5",
+    "120": "10",
+    "180": "15"
+  },
+  "StaffPolicyGuarenteedPensionPlan": {
+    "yes": "19",
+    "no": "20"
+  },
+
+  "DistributionChannelGuarenteedPensionPlan": {
+    "corporate agency": "14",
+    "direct marketing": "17",
+    "online": "18",
+    "broker": "16",
+    "agency": "15"
+  },
+  "DistributionChannelPOSAdarsh": {
+    "corporate agency": "1",
+    "direct marketing": "4",
+    "online": "9",
+    "broker": "3",
+    "agency": "2",
+    "pos-p": "10"
+  },
+  "DistributionChannelSaralPension": {
+    "corporate agency": "9",
+    "agency": "10",
+    "broker": "11",
+    "direct marketing": "12",
+    "insurance marketing firm": "13"
+  },
+  "InputModeOfAnnuityPaymentSP": {
+    "annual": "5",
+    "half-yearly": "6",
+    "quarterly": "7",
+    "monthly": "8"
+  },
+
+  "AnnuityOptionSP": {
+    "annuity option 1 - life annuity with rop": "1",
+    "annuity option 2 - joint life annuity (100%) with return of purchase price": "2"
+
+  },
+  "FundingSourceSP": {
+    "sud life pension policy": "14",
+    "open market and new proposal": "15",
+    "national pension scheme": "16"
+  },
+  "DistributionChannelWealthCreator": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "agency": "2",
+    "brokers": "3",
+    "direct marketing": "4",
+    "insurance marketing firm": "5",
+    "online": "6"
+  },
+  "StaffPolicyWealthCreator": {
+    "yes": "7",
+    "no": "8"
+  },
+  "StandardAgeProofFortuneRoyal": {
+    "yes": "15",
+    "no": "16"
+  },
+  "StaffPolicyFortuneRoyale": {
+    "yes": "11",
+    "no": "12",
+    "sud life staff": "13",
+    "corporate staff": "14"
+  },
+  "DistributionChannelFortuneRoyale": {
+    "corporate agent": "4",
+    "corporate agency": "4",
+    "agency": "5",
+    "broker": "6",
+    "direct marketing": "7",
+    "insurance marketing firm": "8",
+    "online": "9",
+    "web aggregator": "10"
+  },
+  "BenefitOptionFortuneRoyale": {
+    "income benefit": "1",
+    "lumpsum benefit": "2",
+    "child future secure": "3"
+  },
+  "DistributionChannelWealthBuilder": {
+    "corporate agent": "1",
+    "corporate agency": "1",
+    "agency": "2",
+    "brokers": "3",
+    "direct marketing": "4",
+    "insurance marketing firm": "5",
+    "online": "6"
+
+  },
+
+  "PremiumPaymentTermProtectShield": {
+    "5 pay": "5",
+    "10 pay": "10",
+    "12 pay": "12",
+    "15 pay": "15"
+  },
+
+  "StaffPolicyProtectShield": {
+    "yes": "14",
+    "no": "15",
+    "sud life staff/family": "16",
+    "direct sales team": "17"
+  },
+
+  "DistributionChannelProtectShield": {
+    "corporate agent": "7",
+    "corporate agency": "7",
+    "direct  channel": "8",
+    "agency": "9",
+    "broker": "10",
+    "insurance marketing firm": "11",
+    "online": "12",
+    "web aggregator": "13"
+  },
+  "PayoutOptionProtectShield": {
+    "lump sum": "4",
+    "monthly income": "5",
+    "lump-sum plus monthly income": "6"
+  },
+  "PremiumPaymentTermProtectShieldPlus": {
+    "single pay": "1",
+    "5 pay": "5",
+    "10 pay": "10",
+    "12 pay": "12",
+    "15 pay": "15"
+
+  },
+  "CenturionDeathBenifitOptions": {
+    "option 1": "1",
+    "option 2": "2"
+  },
+  "DistributionChannelCenturion": {
+    "corporate agency": "3",
+    "direct marketing": "4",
+    "online": "5",
+    "broker": "6",
+    "agency": "7",
+    "web aggregrator": "8",
+    "insurance marketing firm": "9"
+  },
+  "StaffPolicyCenturion": {
+    "yes": "10",
+    "no": "11",
+    "sud life staff": "12",
+    "corporate staff": "13"
+  },
+
+  "DistributionChannelCenturyIncome": {
+    "corporate agent": "4",
+    "corporate agency": "4",
+    "direct marketing": "5",
+    "online": "6",
+    "broker": "7",
+    "agency": "8",
+    "web aggregrator": "9",
+    "insurance marketing firm": "10"
+  },
+  "StaffPolicyCenturyIncome": {
+    "yes": "11",
+    "no": "12",
+    "sud life staff": "13",
+    "corporate staff": "14"
+  },
+  "OptionCenturyIncome": {
+    "immediate income": "1",
+    "deferred income": "2",
+    "twin income": "3"
+
+  },
+  "StandardAgeProofRetirementRoyal": {
+    "yes": "31",
+    "no": "32"
+  },
+  "RetirementRoyalOption": {
+    "growth plus": "1",
+    "secure plus": "2"
+  },
+
+  "DistributionChannelRetirementRoyal": {
+    "corporate agency": "5",
+    "agency": "6",
+    "broker": "7",
+    "direct marketing": "8",
+    "insurance marketing firm": "9",
+    "online": "10",
+    "web aggregator": "11"
+
+  },
+
+  "StaffPolicyRetirementRoyal": {
+    "yes, bank staff": "12",
+    "no": "13",
+    "na": "14",
+    "yes, sud life staff": "15"
+  },
+
+  "PlanTypeRetirementRoyal": {
+    "a": "16",
+    "b": "17",
+    "c": "18"
+  },
+
+  "PlanOptionRetirementRoyal": {
+    "annuity option 1 - life annuity.": "19",
+    "annuity option 2 - life annuity with return of purchase price.": "20",
+    "annuity option 3 - increasing life annuity (5% simple) with return of purchase price": "21",
+    "annuity option 4 - joint life annuity (50%)": "22",
+    "annuity option 5 - joint life annuity (100%)": "23",
+    "annuity option 6 - joint life annuity (100%) with return of purchase price": "24",
+    "annuity option 7 - annuity certain for 10 years and for life thereafter": "25",
+    "annuity option 8 - annuity certain for 15 years and for life thereafter": "26",
+    "annuity option 9 - annuity certain for 20 years and for life thereafter": "27"
+  },
+
+  "PlanARetirementRoyal": {
+    "sud life's pension policy": "28",
+    "open market and new proposal": "29",
+    "national pension scheme": "30"
+  },
+
+  "AnnuityPaymentFrequency": {
+    "annual": "33",
+    "semi-annual": "34",
+    "quarterly": "35",
+    "monthly": "36"
+  },
+
+  "FundStrategyRetirementRoyal": {
+    "self-managed investment strategy": "1",
+    "age-based investment strategy - aggressive": "2",
+    "age-based investment strategy - conservative": "3",
+    "term-based investment strategy- aggressive": "4",
+    "term-based investment strategy- conservative": "5"
+  },
+  "Gender": {
+    "male": "M",
+    "female": "F",
+    "third gender": "T",
+    "trans": "T",
+    "others": "O"
+
+  },
+  "StandardAgeProof": {
+    "yes": "1",
+    "no": "0"
+  }
+
+
+
+}

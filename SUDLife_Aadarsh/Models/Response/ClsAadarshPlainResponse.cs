@@ -2,9 +2,9 @@
 {
     public class ClsAadarshPlainResponse
     {
-        public float ModalPremium { get; set; }
-        public float Tax { get; set; }
-        public float ModalPremiumwithTax { get; set; }
+        public double ModalPremium { get; set; }
+        public double Tax { get; set; }
+        public double ModalPremiumwithTax { get; set; }
         public string? Message { get; set; }
         public string? Status { get; set; }
         public int TransactionId { get; set; }

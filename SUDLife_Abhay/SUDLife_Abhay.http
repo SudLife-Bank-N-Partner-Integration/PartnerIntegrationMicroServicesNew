@@ -1,0 +1,6 @@
+@SUDLife_Abhay_HostAddress = http://localhost:5286
+
+GET {{SUDLife_Abhay_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

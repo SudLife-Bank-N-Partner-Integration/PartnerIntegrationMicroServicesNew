@@ -39,7 +39,7 @@ namespace SUDLife_Aadarsh.Controllers
             ThirdPartyAPI thirdPartyAPI = new ThirdPartyAPI();
             var response =  thirdPartyAPI.ClientAPI("https://jsonplaceholder.typicode.com/todos/1",Method.Get);
 
-            return response.Content;
+            return response;
         }
     }
 }
