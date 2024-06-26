@@ -1,17 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using RestSharp;
-using SUDLife_Aadarsh.Datalayer;
+using Serilog;
 using SUDLife_Aadarsh.Models.Request;
 using SUDLife_Aadarsh.Models.Response;
 using SUDLife_Aadarsh.ServiceLayer;
-using SUDLife_CallThirdPartyAPI;
 using SUDLife_SecruityMechanism;
 using System;
-using System.Data;
 using System.Threading.Tasks;
 
 namespace SUDLife_Aadarsh.Controllers
@@ -21,54 +17,84 @@ namespace SUDLife_Aadarsh.Controllers
     public class AadarshController : ControllerBase
     {
         private readonly ILogger<AadarshController> _logger;
-        private readonly ClsSecurityMech _SecurityMech;
-        private readonly IConfiguration? _configuration;
+        private readonly ClsSecurityMech _securityMech;
+        private readonly IConfiguration _configuration;
         private readonly ClsAadarsh _clsAadarsh;
 
         public AadarshController(
             IConfiguration configuration,
             ClsAadarsh clsAadarsh,
-            ClsSecurityMech SecurityMech,
+            ClsSecurityMech securityMech,
             ILogger<AadarshController> logger)
         {
-            this._configuration = configuration;
-            this._clsAadarsh = clsAadarsh;
-            this._SecurityMech = SecurityMech;
-            this._logger = logger;
+            _configuration = configuration;
+            _clsAadarsh = clsAadarsh;
+            _securityMech = securityMech;
+            _logger = logger;
         }
 
-        [Authorize]
         [HttpPost("Aadarsh")]
         public async Task<IActionResult> Aadarsh([FromBody] ClsAadarshEncryptedRequest request)
         {
+            string encryptedRequestBody = string.Empty;
+            string plainRequestBody = string.Empty;
+            string plainResponseBody = string.Empty;
+            string encryptedResponseBody = string.Empty;
+
             try
             {
-                _logger.LogInformation("Received request in Aadarsh action");
-                string PlainRequestBody = string.Empty;
-                string PlainResponseBody = string.Empty;
-                string EncryptResponseBody = string.Empty;
-                ClsAadarshEncryptedResponse objEncResponse = new ClsAadarshEncryptedResponse();
-                ClsAadarshPlainResponse ObjAadarshResponse = new ClsAadarshPlainResponse();
-                string SecreteKey = _configuration.GetSection("URLS:SecreteKey").Value;
-                if (request.EncryptReqSign != null && request.EncryptReqSign != "")
+                _logger.LogInformation("Received encrypted request");
+
+                // Serialize and log the encrypted request
+                encryptedRequestBody = JsonConvert.SerializeObject(request);
+
+                if (!string.IsNullOrEmpty(request.EncryptReqSign))
                 {
-                    PlainRequestBody = _SecurityMech.Decrypt(request.EncryptReqSign, SecreteKey);
+                    _logger.LogInformation("Decrypting request body");
+                    string secretKey = _configuration.GetSection("URLS:SecreteKey").Value;
+                    plainRequestBody = _securityMech.Decrypt(request.EncryptReqSign, secretKey);
                 }
-                ClsAadarshPlainRequest _aadarshRequest = JsonConvert.DeserializeObject<ClsAadarshPlainRequest>(PlainRequestBody);
-                ObjAadarshResponse = await _clsAadarsh.AadarshDetails(_aadarshRequest);
-                PlainResponseBody = JsonConvert.SerializeObject(ObjAadarshResponse);
-                EncryptResponseBody = _SecurityMech.Encrypt(PlainResponseBody, SecreteKey);
 
-                objEncResponse = new ClsAadarshEncryptedResponse((int)StatusCodes.Status200OK, request.Source, EncryptResponseBody);
+                // Deserialize the plain request
+                var aadarshRequest = JsonConvert.DeserializeObject<ClsAadarshPlainRequest>(plainRequestBody);
 
-                return Ok(objEncResponse);
+                _logger.LogInformation("Processing request");
+                var aadarshResponse = await _clsAadarsh.AadarshDetails(aadarshRequest);
+
+                // Serialize the plain response
+                plainResponseBody = JsonConvert.SerializeObject(aadarshResponse);
+
+                _logger.LogInformation("Encrypting response body");
+                if (!string.IsNullOrEmpty(plainResponseBody))
+                {
+                    string secretKey = _configuration.GetSection("URLS:SecreteKey").Value;
+                    encryptedResponseBody = _securityMech.Encrypt(plainResponseBody, secretKey);
+                }
+
+                var encryptedResponse = new ClsAadarshEncryptedResponse((int)StatusCodes.Status200OK, request.Source, encryptedResponseBody);
+
+                // Log enriched context 
+                Log.ForContext("EncryptedRequest", encryptedRequestBody)
+                   .ForContext("PlainRequest", plainRequestBody)
+                   .ForContext("PlainResponse", plainResponseBody)
+                   .ForContext("EncryptedResponse", encryptedResponseBody)
+                   .Information("Processed Aadarsh request successfully");
+
+                return Ok(encryptedResponse);
             }
             catch (Exception ex)
             {
-                _logger.LogError("An error occured in Aadarsh action");
+                _logger.LogError(ex, "An error occurred while processing the request");
+
+                // Log enriched context for error 
+                Log.ForContext("EncryptedRequest", encryptedRequestBody)
+                   .ForContext("PlainRequest", plainRequestBody)
+                   .ForContext("PlainResponse", plainResponseBody)
+                   .ForContext("EncryptedResponse", encryptedResponseBody)
+                   .Error(ex, "Failed to process Aadarsh request");
+
                 return BadRequest(ex.Message);
             }
         }
-
     }
 }

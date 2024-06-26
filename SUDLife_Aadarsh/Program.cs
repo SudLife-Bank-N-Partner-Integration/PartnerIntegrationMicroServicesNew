@@ -2,9 +2,11 @@
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using SUDLife_Aadarsh.Models.Request;
+using SUDLife_Aadarsh.Models.Response;
 using SUDLife_Aadarsh.ServiceLayer;
 using SUDLife_CallThirdPartyAPI;
-using SUDLife_Logger; 
+using SUDLife_Logger;
+using SUDLife_SecruityMechanism;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +32,8 @@ builder.Services.AddScoped<ClsCommonOperations>();
 builder.Services.AddScoped<ThirdPartyAPI>();
 builder.Services.AddScoped<ClsAadarsh>();
 builder.Services.AddScoped<ClsSDEBasePremiumRequest>();
+builder.Services.AddScoped<ClsSecurityMech>();
+builder.Services.AddScoped<ClsAadarshPlainResponse>();
 
 string issuer = "CCDD18D8-49FF-43E5-8E6C-D0924C2BBE0C";
 string audience = "B502C4CA-9895-419A-AF6C-65B5801CBDEA";

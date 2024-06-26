@@ -97,7 +97,7 @@ namespace SUDLife_Aadarsh.ServiceLayer
             };
             ClsAadarshPlainResponse _AadarshResponse = new ClsAadarshPlainResponse();
 
-            string url = "https://siapi.sudlife.in/nsureservices.svc/generatebiapi";
+            string url = "https://siapi.sudlife.in/nsureservices.svc/generatebiapi"; // Need to provide condition here.
 
             string jsonBody = System.Text.Json.JsonSerializer.Serialize(_root);
             var APIRequest = jsonBody.Replace("null", "[]");
