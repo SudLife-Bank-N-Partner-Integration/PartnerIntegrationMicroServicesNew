@@ -37,7 +37,7 @@ namespace SUDLife_Aashirwaad.ServiceLayer
 
                 new ClsSDEBaseKeyValuePair { key = "@LI_ENTRY_AGE", value =Convert.ToString(_CommonOperations.CalculateAge(Convert.ToDateTime(_CommonOperations.DateFormating((ObjAashirwaad.ApplicantDetails.ApplicantDateOfBirth)))))  },
                 new ClsSDEBaseKeyValuePair { key = "@LI_DOB", value = _CommonOperations.DateFormating((ObjAashirwaad.ApplicantDetails.ApplicantDateOfBirth))},
-                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.Gender(ObjAashirwaad.ApplicantDetails.ApplicantGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@LI_GENDER", value =_CommonOperations.GetDynamicValue("Gender",(ObjAashirwaad.ApplicantDetails.ApplicantGender.ToLower())) },
 
 
 
@@ -51,7 +51,7 @@ namespace SUDLife_Aashirwaad.ServiceLayer
                 new ClsSDEBaseKeyValuePair { key = "@PROPOSER_AGE", value = Convert.ToString(_CommonOperations.CalculateAge(Convert.ToDateTime(_CommonOperations.DateFormating(DateToBeFormatted: ObjAashirwaad.ProposerDetails.ProposerDateOfBirth.ToLower())))) },
 
                 new ClsSDEBaseKeyValuePair { key = "@PROPOSER_DOB", value = _CommonOperations.DateFormating(DateToBeFormatted: ObjAashirwaad.ProposerDetails.ProposerDateOfBirth.ToLower()) },
-                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value = _CommonOperations.Gender(ObjAashirwaad.ProposerDetails.ProposerGender.ToLower()) },
+                new ClsSDEBaseKeyValuePair { key = "@PROPOSER_GENDER", value =_CommonOperations.GetDynamicValue("Gender",(ObjAashirwaad.ProposerDetails.ProposerGender.ToLower())) },
                 new ClsSDEBaseKeyValuePair { key = "@AGE_PROOF", value ="-1" },
 
 
@@ -72,7 +72,7 @@ namespace SUDLife_Aashirwaad.ServiceLayer
 
 
                 new ClsSDEBaseKeyValuePair { key = "@PR_ModalPrem", value = string.Empty},
-                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.StandardAgeProof(ObjAashirwaad.StandardAgeProof.ToLower())},
+                new ClsSDEBaseKeyValuePair { key = "@NSAP_FLAG", value = _CommonOperations.GetDynamicValue("StandardAgeProof",(ObjAashirwaad.StandardAgeProof.ToLower()))},
 
                 new ClsSDEBaseKeyValuePair { key = "@kfc", value = "0"},
 

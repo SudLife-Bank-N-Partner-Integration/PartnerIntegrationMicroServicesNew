@@ -1,23 +1,27 @@
-﻿using SUDLife_DBConnection;
+﻿using SUDLife_DataRepo;
 using System.Data;
 using System.Data.SqlClient;
-using System.Security.Cryptography.X509Certificates;
 
 namespace SUDLife_Aadarsh.Datalayer
 {
     //Just for reference but give name as per our requirement
     public class UpdateLogs
     {
-        Ado ado = new Ado();
+        private readonly IExectueProcdure _exectueProcdure;
+
+        public UpdateLogs(IExectueProcdure exectueProcdure)
+        {
+            _exectueProcdure = exectueProcdure;
+        }
 
         public void ExecuteProc()
         {
             SqlParameter[] param = new SqlParameter[]
             {
-                new SqlParameter(parameterName :"@Name",value:"Mayur"),
-
+                new SqlParameter{ParameterName = "",Value =""}
             };
-            DataSet ds = ado.ExecuteProcedure("StoreLogs", param);
+            DataSet ds = new DataSet();
+            ds = _exectueProcdure.ExecuteProcedure("SP_ProcName",param);
         }
 
     }

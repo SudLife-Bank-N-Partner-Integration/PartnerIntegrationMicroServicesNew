@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Globalization;
 
-namespace SUDLife_Aadarsh.ServiceLayer
+namespace SUDLife_AssuredIncome.ServiceLayer
 {
     public class ClsCommonOperations
     {
@@ -30,7 +30,7 @@ namespace SUDLife_Aadarsh.ServiceLayer
             }
         }
 
-
+        
         public string CalculateAge(DateTime dateOfBirth)
         {
             try
@@ -44,12 +44,12 @@ namespace SUDLife_Aadarsh.ServiceLayer
             }
             catch (Exception ex)
             {
-                // WriteExceptionToLog(ex.Message, "CalculateAge");
+                
                 return null;
             }
 
         }
-       
+    
         public string APIKey()
         {
             try
@@ -59,6 +59,20 @@ namespace SUDLife_Aadarsh.ServiceLayer
 
                 Key = _configuration.GetSection("URLS:APIKey").Value;
                 return Key;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+        public string ConvertToYears(string PolicyTerm)
+        {
+            try
+            {
+                int Loantenureinyears = Convert.ToInt32(PolicyTerm) / 12;
+                return PolicyTerm = Convert.ToString(Loantenureinyears);
             }
             catch (Exception)
             {

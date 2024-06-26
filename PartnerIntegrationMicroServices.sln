@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_CallThirdPartyAPI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_SecruityMechanism", "SUDLife_SecruityMechanism\SUDLife_SecruityMechanism.csproj", "{F5F25610-3C94-43CD-AA0B-8CB4187EB245}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_DBConnection", "SUDLife_DBConnection\SUDLife_DBConnection.csproj", "{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_DataRepo", "SUDLife_DataRepo\SUDLife_DataRepo.csproj", "{DB568CBE-2AFD-43DD-9BB1-1BF8413C4293}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{567C1834-7D92-4B57-AB30-DD6FCD477626}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Authentication", "SUDLife_Authentication\SUDLife_Authentication.csproj", "{AC24B254-1777-4853-82E5-388311E91E2C}"
 EndProject
@@ -20,6 +25,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Aashirwaad", "SUDLife_Aashirwaad\SUDLife_Aashirwaad.csproj", "{C33D41BE-D3A1-4E3C-AA94-1BB9DF2E7A49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUDLife_Abhay", "SUDLife_Abhay\SUDLife_Abhay.csproj", "{73481BC6-1D27-4301-B90B-D978632FB0F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_Akshay", "SUDLife_Akshay\SUDLife_Akshay.csproj", "{800A3093-365A-4B3E-9BBB-2D0A6ED86CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUDLife_AssuredIncome", "SUDLife_AssuredIncome\SUDLife_AssuredIncome.csproj", "{461CE0BF-8C0A-4B87-A4B9-E8897FBCE8BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +48,10 @@ Global
 		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F25610-3C94-43CD-AA0B-8CB4187EB245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB568CBE-2AFD-43DD-9BB1-1BF8413C4293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB568CBE-2AFD-43DD-9BB1-1BF8413C4293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB568CBE-2AFD-43DD-9BB1-1BF8413C4293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB568CBE-2AFD-43DD-9BB1-1BF8413C4293}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BFB36F2-D7E6-4A02-BAB6-4252F7699CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +76,14 @@ Global
 		{73481BC6-1D27-4301-B90B-D978632FB0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73481BC6-1D27-4301-B90B-D978632FB0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73481BC6-1D27-4301-B90B-D978632FB0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800A3093-365A-4B3E-9BBB-2D0A6ED86CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800A3093-365A-4B3E-9BBB-2D0A6ED86CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800A3093-365A-4B3E-9BBB-2D0A6ED86CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800A3093-365A-4B3E-9BBB-2D0A6ED86CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461CE0BF-8C0A-4B87-A4B9-E8897FBCE8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461CE0BF-8C0A-4B87-A4B9-E8897FBCE8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461CE0BF-8C0A-4B87-A4B9-E8897FBCE8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461CE0BF-8C0A-4B87-A4B9-E8897FBCE8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
