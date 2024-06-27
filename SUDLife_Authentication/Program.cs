@@ -1,5 +1,6 @@
 using Serilog;
 using SUDLife_Authentication.ServiceLayer;
+using SUDLife_DataRepo;
 
 var builder = WebApplication.CreateBuilder(args);
 // Loading configuration
@@ -16,11 +17,15 @@ Log.Logger = new LoggerConfiguration()
 // Using Serilog for logging
 builder.Host.UseSerilog();
 
+builder.Configuration.AddJsonFile(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "SUDLife_DataRepo/appsettings.json"), optional: false, reloadOnChange: true);
+builder.Services.AddDataAccess(builder.Configuration);
+
 // Add services to the container.
 
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<ClsAuthenticationService>();
+
 
 var app = builder.Build();
 

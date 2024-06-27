@@ -1,4 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
+using SUDLife_DataRepo;
+using System.Data;
+using System.Data.SqlClient;
 using System.Globalization;
 
 namespace SUDLife_Aadarsh.ServiceLayer
@@ -7,10 +10,11 @@ namespace SUDLife_Aadarsh.ServiceLayer
     {
         private readonly IConfiguration? _configuration;
         static JObject jsonObject; // Declare JObject to store the JSON data
-        public ClsCommonOperations(IConfiguration configuration)
+        private readonly IExectueProcdure _exectueProcdure;
+        public ClsCommonOperations(IConfiguration configuration, IExectueProcdure exectueProcdure)
         {
             _configuration = configuration;
-
+            _exectueProcdure = exectueProcdure;
         }
         public string DateFormating(string DateToBeFormatted)
         {
@@ -99,6 +103,28 @@ namespace SUDLife_Aadarsh.ServiceLayer
             }
             return value;
 
+        }
+        
+        public string GetSecretKey(string Partner) 
+        {
+            DataSet ds = new DataSet();
+            var partnerParam = new SqlParameter
+            {
+                ParameterName = "@Partner",
+                Value = Partner
+            };
+
+            var parameters = new[] { partnerParam };
+
+            ds = _exectueProcdure.ExecuteProcedure("GetOrGenerateSecretKey", parameters);
+            var secretKey = ds.Tables[0].Rows[0]["SecretKey"];
+
+            if (secretKey == null)
+            {
+                return null;
+            }
+
+            return secretKey.ToString();
         }
     }
 }
