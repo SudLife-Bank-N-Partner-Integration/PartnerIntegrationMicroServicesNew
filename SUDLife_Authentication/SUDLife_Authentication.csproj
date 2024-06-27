@@ -13,4 +13,8 @@
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SUDLife_DataRepo\SUDLife_DataRepo.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,15 +6,13 @@ using Serilog;
 using SUDLife_Aadarsh.Models.Request;
 using SUDLife_Aadarsh.Models.Response;
 using SUDLife_Aadarsh.ServiceLayer;
-using SUDLife_CallThirdPartyAPI;
-using SUDLife_DataRepo;
 using SUDLife_SecruityMechanism;
 using System;
 using System.Threading.Tasks;
 
 namespace SUDLife_Aadarsh.Controllers
 {
-    [Route("api/Aadarsh/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AadarshController : ControllerBase
     {
@@ -22,25 +20,17 @@ namespace SUDLife_Aadarsh.Controllers
         private readonly ClsSecurityMech _securityMech;
         private readonly IConfiguration _configuration;
         private readonly ClsAadarsh _clsAadarsh;
-        private readonly IExectueProcdure _execproc;
 
         public AadarshController(
             IConfiguration configuration,
             ClsAadarsh clsAadarsh,
             ClsSecurityMech securityMech,
             ILogger<AadarshController> logger)
-            ClsSecurityMech SecurityMech,
-            ILogger<AadarshController> logger,IExectueProcdure exectueProcdure)
         {
             _configuration = configuration;
             _clsAadarsh = clsAadarsh;
             _securityMech = securityMech;
             _logger = logger;
-            this._configuration = configuration;
-            this._clsAadarsh = clsAadarsh;
-            this._SecurityMech = SecurityMech;
-            this._logger = logger;
-            _execproc = exectueProcdure;
         }
 
         [HttpPost("Aadarsh")]
@@ -83,7 +73,7 @@ namespace SUDLife_Aadarsh.Controllers
 
                 var encryptedResponse = new ClsAadarshEncryptedResponse((int)StatusCodes.Status200OK, request.Source, encryptedResponseBody);
 
-                // Log enriched context 
+                // Log enriched context without affecting the main message
                 Log.ForContext("EncryptedRequest", encryptedRequestBody)
                    .ForContext("PlainRequest", plainRequestBody)
                    .ForContext("PlainResponse", plainResponseBody)
@@ -96,7 +86,7 @@ namespace SUDLife_Aadarsh.Controllers
             {
                 _logger.LogError(ex, "An error occurred while processing the request");
 
-                // Log enriched context for error 
+                // Log enriched context for error without affecting the main message
                 Log.ForContext("EncryptedRequest", encryptedRequestBody)
                    .ForContext("PlainRequest", plainRequestBody)
                    .ForContext("PlainResponse", plainResponseBody)
@@ -105,14 +95,6 @@ namespace SUDLife_Aadarsh.Controllers
 
                 return BadRequest(ex.Message);
             }
-        }
-
-        [HttpPost]
-
-        public void UpdateLogs()
-        {
-            UpdateLogs logs = new UpdateLogs(_execproc);
-            logs.ExecuteProc();
         }
     }
 }
